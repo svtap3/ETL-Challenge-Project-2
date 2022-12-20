@@ -34,4 +34,49 @@ select SharkAttacks.Year, SharkAttacks.Country, SharkAttacks.Activity, SharkAtta
 WorldPopulation."2015 Population", WorldPopulation."2010 Population", WorldPopulation."2010 Population", WorldPopulation."2000 Population", WorldPopulation."1990 Population", WorldPopulation."1980 Population", WorldPopulation."1970 Population", WorldPopulation."Growth Rate", WorldPopulation."World Population Percentage"
 from SharkAttacks
 join WorldPopulation
-on SharkAttacks.country=WorldPopulation.country;
+on SharkAttacks.country=WorldPopulation.country
+
+select distinct
+SharkAttacks.country,
+"Growth Rate", 
+"World Population Percentage" 
+FROM WorldPopulation
+Inner JOIN SharkAttacks ON
+SharkAttacks.country = WorldPopulation.country;
+
+select country, count(*)
+from SharkAttacks
+group by country
+order by "count" asc;
+
+select country, "World Population Percentage"
+FROM WorldPopulation
+order by "World Population Percentage" desc;
+
+select SharkAttacks.Country,count(SharkAttacks.Country), WorldPopulation."World Population Percentage" 
+from SharkAttacks
+join WorldPopulation
+on SharkAttacks.country=WorldPopulation.country
+group by SharkAttacks.Country,WorldPopulation."World Population Percentage"
+order by "count" desc;
+
+select SharkAttacks.Country,count(SharkAttacks.Country), SharkAttacks.sex, SharkAttacks.activity, WorldPopulation."World Population Percentage" 
+from SharkAttacks
+join WorldPopulation
+on SharkAttacks.country=WorldPopulation.country
+group by SharkAttacks.Country,SharkAttacks.sex, SharkAttacks.activity,WorldPopulation."World Population Percentage"
+order by "World Population Percentage" desc;
+
+select SharkAttacks.Country,count(SharkAttacks.Country),WorldPopulation."World Population Percentage" 
+from SharkAttacks
+join WorldPopulation
+on SharkAttacks.country=WorldPopulation.country
+group by SharkAttacks.Country,WorldPopulation."World Population Percentage"
+order by "World Population Percentage" desc;
+
+select SharkAttacks.Country,count(SharkAttacks.Country), WorldPopulation."World Population Percentage" 
+from SharkAttacks
+join WorldPopulation
+on SharkAttacks.country=WorldPopulation.country
+group by SharkAttacks.Country,WorldPopulation."World Population Percentage"
+order by "count" asc;
