@@ -71,7 +71,7 @@ on SharkAttacks.country=WorldPopulation.country
 group by SharkAttacks.Country,WorldPopulation."World Population Percentage"
 order by "count" desc;
 
---Query looking at shark attacks as, ordered by world populaton percentage. Determine query did not yield usable data pertinent to summary. 
+--Query looking at activity that was taking place when the shark attack occurred, ordered by world populaton percentage. 
 select SharkAttacks.Country,count(SharkAttacks.Country), SharkAttacks.sex, SharkAttacks.activity, WorldPopulation."World Population Percentage" 
 from SharkAttacks
 join WorldPopulation
