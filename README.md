@@ -1,7 +1,15 @@
-# project_2
+# Extract, Transform, Load
 
 Created by: Robert Casiano, Liberty Heise, Autumn Klepal, Antonio Ponce, Randie Sinclair
 
+In this group project, our company Jet Ski Inc. is looking for a new location for our headquarters that needs to be near the water, but also safe from shark attacks. We will be assessing locations around the world, analyzing the activities that may have prompted shark attacks and the gender of the individuals involved. Our team has gathered data on shark attack types, population growth of humans, and locations. We will be using the Kaggle DB for both sets: World Population Dataset and Global Shark Attacks.
+
+# Technical Skills Required
+- Familiarity with Pandas and SQL for data cleaning, transformation, and analysis.
+- Knowledge of SQL queries and PgAdmin for database management and joining tables.
+- Ability to identify and handle data issues such as missing values, incorrect data types, and inconsistent capitalization.
+
+# Completed Analysis
 Jet Ski Inc. Shark Attack Vulnerability
 
 Our company, Jet Ski Inc., is looking for a new home base for our Headquarters that needs to be near the water but we want to ensure our employees are safe from shark attacks.  We will be assessing locations around the world, what activities may have prompted the attacks and what the gender was of the individual.  These variables will help us determine both our HQ location and also which employees we will select to send out into the waters.Our team has spent the past few days gathering data on the types of shark attacks, population growth of humans, and locations. We had lots of success with the data at hand, and we are excited to share our findings.
